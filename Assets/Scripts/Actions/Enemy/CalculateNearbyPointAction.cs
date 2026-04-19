@@ -7,7 +7,7 @@ using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(name: "CalculateNearbyPoint", story: "[Self] calculates [NearbyPoint] around [Point] in radius [SearchingRadius]", category: "Action", id: "bd25de491840c15b14e6cda651f4bf08")]
+[NodeDescription(name: "CalculateNearbyPoint", story: "[Self] calculates [NearbyPoint] around [Point]", category: "Action", id: "bd25de491840c15b14e6cda651f4bf08")]
 public partial class CalculateNearbyPointAction : Action
 {
     [SerializeReference] public BlackboardVariable<GameObject> Self;

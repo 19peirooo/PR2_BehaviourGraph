@@ -5,7 +5,7 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(name: "AllyNeedsHealing", story: "[Ally] Needs Healing at health [CriticalHealth] from [Self]", category: "Action", id: "78ffb67bed6433a35039dc16623a32aa")]
+[NodeDescription(name: "AllyNeedsHealing", story: "[Ally] Needs Healing", category: "Action", id: "78ffb67bed6433a35039dc16623a32aa")]
 public partial class AllyNeedsHealingAction : Action
 {
     [SerializeReference] public BlackboardVariable<Player> Ally;

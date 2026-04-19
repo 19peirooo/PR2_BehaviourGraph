@@ -5,7 +5,7 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(name: "CannotShoot", story: "[Self] cannot shoot [Target] in range [ShootRange]", category: "Action", id: "9f034a5e0fefd6b62fd2401a2fe1c0e0")]
+[NodeDescription(name: "CannotShoot", story: "[Self] cannot shoot [Target]", category: "Action", id: "9f034a5e0fefd6b62fd2401a2fe1c0e0")]
 public partial class CannotShootAction : Action
 {
     [SerializeReference] public BlackboardVariable<SensorSystem> Self;
