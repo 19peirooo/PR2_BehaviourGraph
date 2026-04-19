@@ -5,13 +5,13 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(name: "Catches", story: "[Target] catches [Self]", category: "Action", id: "195e0c101c81a7bb6207e64ff60e1477")]
+[NodeDescription(name: "Catches", story: "[Self] is catched", category: "Action", id: "1bf4e8faa4bcd48c70df908485a67aae")]
 public partial class CatchesAction : Action
 {
-    [SerializeReference] public BlackboardVariable<GameObject> Target;
     [SerializeReference] public BlackboardVariable<GameObject> Self;
+    [SerializeReference] public BlackboardVariable<GameObject> Target;
     
-    private float catchDistance = 0.05f;
+    private float catchDistance = 1.25f;
     
     protected override Status OnStart()
     {
@@ -20,7 +20,9 @@ public partial class CatchesAction : Action
 
     protected override Status OnUpdate()
     {
-        return Vector3.Distance(Self.Value.transform.position,Target.Value.transform.position) <= catchDistance ? Status.Success : Status.Running;
+        return Vector3.Distance(Self.Value.transform.position,Target.Value.transform.position) <= catchDistance
+            ? Status.Success 
+            : Status.Running;
     }
 
     protected override void OnEnd()

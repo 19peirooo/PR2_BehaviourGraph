@@ -15,12 +15,14 @@ public partial class FleeAction : Action
     private NavMeshAgent agent;
     private Animator anim;
     
-    private float fleeSpeed = 5.5f;
     private float fleeDistance = 10f;
+    private float originalStoppingDistance;
 
     protected override Status OnStart()
     {
         agent = Self.Value.GetComponent<NavMeshAgent>();
+        originalStoppingDistance = agent.stoppingDistance;
+        agent.stoppingDistance = 0f;
         anim = Self.Value.GetComponent<Animator>();
         return Status.Running;
     }
@@ -39,13 +41,15 @@ public partial class FleeAction : Action
         {
             agent.SetDestination(hit.position);
         }
-        
+
         return Status.Running;
+
     }
 
     protected override void OnEnd()
     {
         anim.SetFloat("SpeedMagnitude",0f);
+        agent.stoppingDistance = originalStoppingDistance;
     }
 }
 
