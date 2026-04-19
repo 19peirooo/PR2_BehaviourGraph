@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [field: SerializeField] public float Hp { get; private set; }
-    
 
     public float MaxHealth { get; private set;}
 

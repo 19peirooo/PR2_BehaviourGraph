@@ -122,7 +122,7 @@ MonoBehaviour:
         BlackboardGroupReferences: []
         Root:
           rid: 2870193057298120947
-        m_VersionTimestamp: 639121075022407113
+        m_VersionTimestamp: 639122246008334792
     - rid: 2870193041936482697
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   - rid: 2870193056976732283
   - rid: 2870193056976732762
   - rid: 2870193056976732824
-  m_VersionTimestamp: 639121075022407113
+  m_VersionTimestamp: 639122246008334792
   m_SerializedVersion: 2
   m_DebugInfo: {fileID: 7302884916996380854}
   m_RuntimeGraph: {fileID: -1452952808874983610}
@@ -1281,7 +1281,7 @@ MonoBehaviour:
     NamedChildren: []
     IsPlaceholder: 0
   - Name: AllyNeedsHealing
-    Story: '[Ally] Needs Healing at health [CriticalHealth] from [Self]'
+    Story: '[Ally] Needs Healing'
     RuntimeTypeString: AllyNeedsHealingAction, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
@@ -1860,7 +1860,7 @@ MonoBehaviour:
     - rid: 2870193041936482802
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-        Position: {x: -1415.2822, y: 507.04993}
+        Position: {x: -1415.2821, y: 439.05457}
         ID:
           m_Value0: 3367777959628396618
           m_Value1: 17789687686358088737

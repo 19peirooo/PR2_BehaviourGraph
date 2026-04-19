@@ -13,8 +13,8 @@ public partial class IsHurtAction : Action
 
     private float timer = 0f;
 
-    private float minCryTime = 10f;
-    private float maxCryTime = 20f;
+    private float minCryTime = 5f;
+    private float maxCryTime = 10f;
 
     private float timeUntilCry;
 
