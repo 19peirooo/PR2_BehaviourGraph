@@ -1593,8 +1593,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c049be14dafc1d84ca7298e2cd85dfe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonController
-  movementSpeed: 3
-  jumpHeight: 2
+  movementSpeed: 6
+  jumpHeight: 1
   gravityScale: -9.81
   feet: {fileID: 943213481}
   detectionRadius: 0.43
@@ -1637,7 +1637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   <Hp>k__BackingField: 100
-  <MaxHealth>k__BackingField: 100
 --- !u!1 &1616250978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2576,7 @@ MonoBehaviour:
   - rid: 2870192971766300866
   - rid: 2870192971766300867
   - rid: 2870193036552831270
+  - rid: 2870193060003447629
   m_OriginalGraph: {fileID: -3376352859116969286, guid: 57c9960c2cdb2bb4c844fa7b225f659f, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -2615,6 +2615,14 @@ MonoBehaviour:
           m_Value1: 15620429714252823597
         Name: ShootRange
         m_Value: 9
+    - rid: 2870193060003447629
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 8253811391085100922
+          m_Value1: 8317943048476904582
+        Name: SearchingRadius
+        m_Value: 7
 --- !u!4 &945534751066590188
 Transform:
   m_ObjectHideFlags: 0

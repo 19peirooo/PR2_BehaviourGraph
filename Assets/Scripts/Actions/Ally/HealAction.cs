@@ -13,14 +13,11 @@ public partial class HealAction : Action
     [SerializeReference] public BlackboardVariable<float> HealTime;
 
     private float timer = 0f;
-    private Animator anim;
 
 
     protected override Status OnStart()
     {
         timer = 0f;
-        anim = Self.Value.GetComponent<Animator>();
-        anim.SetTrigger("Throw");
         return Status.Running;
     }
 
